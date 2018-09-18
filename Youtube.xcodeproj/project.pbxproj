@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951C043521516C9C00226427 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951C043421516C9C00226427 /* MenuBar.swift */; };
 		952097F620F26878005FF6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952097F520F26878005FF6DF /* AppDelegate.swift */; };
 		952097F820F26878005FF6DF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952097F720F26878005FF6DF /* HomeController.swift */; };
 		952097FB20F26878005FF6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952097F920F26878005FF6DF /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		951C043421516C9C00226427 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		952097F220F26878005FF6DF /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		952097F520F26878005FF6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		952097F720F26878005FF6DF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -58,14 +60,14 @@
 		952097F420F26878005FF6DF /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
-				9520980D20F2880C005FF6DF /* Controller */,
-				9520980A20F2879E005FF6DF /* View */,
-				9520980720F2874A005FF6DF /* Helpers */,
-				952097F520F26878005FF6DF /* AppDelegate.swift */,
-				952097F920F26878005FF6DF /* Main.storyboard */,
-				952097FC20F26879005FF6DF /* Assets.xcassets */,
-				952097FE20F26879005FF6DF /* LaunchScreen.storyboard */,
 				9520980120F26879005FF6DF /* Info.plist */,
+				952097F520F26878005FF6DF /* AppDelegate.swift */,
+				952097FC20F26879005FF6DF /* Assets.xcassets */,
+				9520980D20F2880C005FF6DF /* Controller */,
+				9520980720F2874A005FF6DF /* Helpers */,
+				952097FE20F26879005FF6DF /* LaunchScreen.storyboard */,
+				952097F920F26878005FF6DF /* Main.storyboard */,
+				9520980A20F2879E005FF6DF /* View */,
 			);
 			path = Youtube;
 			sourceTree = "<group>";
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9520980B20F287BC005FF6DF /* VideoCell.swift */,
+				951C043421516C9C00226427 /* MenuBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				9520980C20F287BC005FF6DF /* VideoCell.swift in Sources */,
 				9520980920F28760005FF6DF /* Extensions.swift in Sources */,
 				952097F620F26878005FF6DF /* AppDelegate.swift in Sources */,
+				951C043521516C9C00226427 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
