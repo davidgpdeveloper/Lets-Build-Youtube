@@ -13,7 +13,7 @@ class BaseCell: UICollectionViewCell {
         super.init(frame: frame)
         setupViews()
     }
-    
+    		
     func setupViews() {
     
     }
@@ -74,11 +74,11 @@ class VideoCell: BaseCell {
         
         if let thumbnailImageUrl = video?.thumnailImageName {
             thumbnailImageView.loadImageUrlString(urlString: thumbnailImageUrl)
-        }        
+        }
     }
     
-    let thumbnailImageView: UIImageView = {
-        let imageView = UIImageView()
+    let thumbnailImageView: CustomImageView = {
+        let imageView = CustomImageView()
         imageView.image = UIImage(named: "taylor_swift_blank_space")
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -91,8 +91,8 @@ class VideoCell: BaseCell {
         return view
     }()
     
-    let userProfileView: UIImageView = {
-        let imageView = UIImageView()
+    let userProfileView: CustomImageView = {
+        let imageView = CustomImageView()
         imageView.image = UIImage(named: "taylor_swift_profile")
         imageView.layer.cornerRadius = 22
         imageView.layer.masksToBounds = true
