@@ -124,7 +124,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let mb = MenuBar()
         return mb
     }()
-    
+        
     private func setupBarMenu() {
         view.addSubview(menuBar)
         view.addConstraintsWithFormat(format: "H:|[v0]|", view: menuBar)
