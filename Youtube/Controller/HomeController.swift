@@ -31,49 +31,15 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 //        return [blankSpaceVideo, badBloodVideo]
 //    }()
     
+
     var videos: [Video]?
     
     func fetchVideos() {
-        let url = "https://s3-us-west-2.amazonaws.com/youtubeassets/home.json"
-
-
-        URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { (data, response, error) -> Void in
-  
-            if error != nil {
-                print(error)
-                return
-            }
-            
-            self.videos = [Video]()
-            
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                
-                for dictionary in json as! [[String : AnyObject]] {
-                    
-                    let video = Video()
-                    video.title = dictionary["title"] as! String
-                    video.thumnailImageName = dictionary["thumbnail_image_name"] as! String
-                    
-                    let channelDict = dictionary["channel"] as! [String : AnyObject]
-                    
-                    let channel = Channel()
-                    channel.name = channelDict["name"] as! String
-                    channel.profileImageName = channelDict["profile_image_name"] as! String
-                    
-                    video.channel = channel
-                    self.videos?.append(video)
-                }
-                
-                DispatchQueue.main.async {
-                    self.collectionView?.reloadData()
-                }
-                                
-            } catch let jsonError {
-                print(jsonError)
-            }
-            
-        }).resume()
+        ApiService.sharedInstance.fechVideos { (videos: [Video]) in
+            self.videos = videos
+            self.collectionView?.reloadData()
+        }
+      
     }
     
     override func viewDidLoad() {
@@ -81,7 +47,6 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         fetchVideos()
         
-        navigationItem.title = "Home"
         navigationController?.navigationBar.isTranslucent = false
         
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
@@ -140,9 +105,21 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }()
         
     private func setupBarMenu() {
+        
+        navigationController?.hidesBarsOnSwipe = true
+        
+        let redView = UIView()
+        redView.backgroundColor = UIColor.red
+        view.addSubview(redView)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", view: redView)
+        view.addConstraintsWithFormat(format: "V:[v0(50)]", view: redView)
+        
         view.addSubview(menuBar)
         view.addConstraintsWithFormat(format: "H:|[v0]|", view: menuBar)
-        view.addConstraintsWithFormat(format: "V:|[v0(50)]|", view: menuBar)
+        view.addConstraintsWithFormat(format: "V:[v0(50)]", view: menuBar)
+        
+        menuBar.topAnchor.constraint(equalTo: topLayoutGuide.topAnchor).isActive = true
+        
     }
    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
