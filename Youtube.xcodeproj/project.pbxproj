@@ -17,6 +17,7 @@
 		9520980020F26879005FF6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952097FE20F26879005FF6DF /* LaunchScreen.storyboard */; };
 		9520980920F28760005FF6DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520980820F28760005FF6DF /* Extensions.swift */; };
 		9520980C20F287BC005FF6DF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520980B20F287BC005FF6DF /* VideoCell.swift */; };
+		95768559217FA9D900319C5D /* FeddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95768558217FA9D900319C5D /* FeddCell.swift */; };
 		9597AA45217E4CA7007A24A4 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597AA44217E4CA7007A24A4 /* ApiService.swift */; };
 		95CC459D2156B0A900D573DF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC459C2156B0A900D573DF /* Video.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		9520980120F26879005FF6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9520980820F28760005FF6DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9520980B20F287BC005FF6DF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		95768558217FA9D900319C5D /* FeddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeddCell.swift; sourceTree = "<group>"; };
 		9597AA44217E4CA7007A24A4 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		95CC459C2156B0A900D573DF /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				9520980B20F287BC005FF6DF /* VideoCell.swift */,
 				951C043421516C9C00226427 /* MenuBar.swift */,
 				95050E7E216A6305000CCB45 /* SettingCell.swift */,
+				95768558217FA9D900319C5D /* FeddCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				952097F820F26878005FF6DF /* HomeController.swift in Sources */,
 				95CC459D2156B0A900D573DF /* Video.swift in Sources */,
+				95768559217FA9D900319C5D /* FeddCell.swift in Sources */,
 				95050E7F216A6305000CCB45 /* SettingCell.swift in Sources */,
 				9520980C20F287BC005FF6DF /* VideoCell.swift in Sources */,
 				95050E7D216A5DD7000CCB45 /* SettingsLauncher.swift in Sources */,
