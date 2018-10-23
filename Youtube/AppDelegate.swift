@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let layout = UICollectionViewFlowLayout()
         window?.rootViewController = UINavigationController(rootViewController: HomeController(collectionViewLayout: layout))
-
+//        layout.scrollDirection = .horizontal
+        
         UINavigationBar.appearance().barTintColor = UIColor.rgb(red: 230.0, green: 32.0, blue: 31.0)
         
         //get rid of black bar undermeath navbar
