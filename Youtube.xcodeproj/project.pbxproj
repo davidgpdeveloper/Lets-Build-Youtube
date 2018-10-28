@@ -20,6 +20,7 @@
 		95768559217FA9D900319C5D /* FeddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95768558217FA9D900319C5D /* FeddCell.swift */; };
 		9576855B2185D9E000319C5D /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576855A2185D9E000319C5D /* TrendingCell.swift */; };
 		9576855D2185DC1600319C5D /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576855C2185DC1600319C5D /* SubscriptionCell.swift */; };
+		9576855F21862EB500319C5D /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576855E21862EB500319C5D /* VideoLauncher.swift */; };
 		9597AA45217E4CA7007A24A4 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597AA44217E4CA7007A24A4 /* ApiService.swift */; };
 		95CC459D2156B0A900D573DF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC459C2156B0A900D573DF /* Video.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		95768558217FA9D900319C5D /* FeddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeddCell.swift; sourceTree = "<group>"; };
 		9576855A2185D9E000319C5D /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
 		9576855C2185DC1600319C5D /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
+		9576855E21862EB500319C5D /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		9597AA44217E4CA7007A24A4 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		95CC459C2156B0A900D573DF /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9520980820F28760005FF6DF /* Extensions.swift */,
+				9576855E21862EB500319C5D /* VideoLauncher.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				95050E7F216A6305000CCB45 /* SettingCell.swift in Sources */,
 				9520980C20F287BC005FF6DF /* VideoCell.swift in Sources */,
 				95050E7D216A5DD7000CCB45 /* SettingsLauncher.swift in Sources */,
+				9576855F21862EB500319C5D /* VideoLauncher.swift in Sources */,
 				9597AA45217E4CA7007A24A4 /* ApiService.swift in Sources */,
 				9520980920F28760005FF6DF /* Extensions.swift in Sources */,
 				952097F620F26878005FF6DF /* AppDelegate.swift in Sources */,
