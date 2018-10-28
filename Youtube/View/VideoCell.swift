@@ -42,7 +42,7 @@ class VideoCell: BaseCell {
                 numberFormatter.locale = NSLocale.current
                 numberFormatter.numberStyle = .decimal
                 
-                let subtitleText = "\(channelName) * \(numberFormatter.string(from: numberOfViews)!) * 2 years ago"
+                let subtitleText = "\(channelName) • \(numberFormatter.string(from: NSNumber(value: numberOfViews))!) • 2 years ago "
                 subtitleTextView.text = subtitleText
             }
             
@@ -72,7 +72,7 @@ class VideoCell: BaseCell {
     
     func setupThumbnailImage() {
         
-        if let thumbnailImageUrl = video?.thumnailImageName {
+        if let thumbnailImageUrl = video?.thumbnailImageName {
             thumbnailImageView.loadImageUrlString(urlString: thumbnailImageUrl)
         }
     }

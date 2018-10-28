@@ -29,47 +29,35 @@ class ApiService: NSObject {
         fetchFeedForUrlString(urlString: "\(baseUrl)/subscriptions.json", completion: completion)
     }
     
+
     func fetchFeedForUrlString(urlString: String, completion: @escaping ([Video]) -> ()) {
-        
-        
-        URLSession.shared.dataTask(with: URL(string: urlString)!, completionHandler: { (data, response, error) -> Void in
+        let url = URL(string: urlString)
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
             
             if error != nil {
-                print(error)
+                print(error ?? "")
                 return
             }
             
-            var videos = [Video]()
-            
             do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                
-                for dictionary in json as! [[String : AnyObject]] {
-                    
-                    let video = Video()
-                    video.title = dictionary["title"] as! String
-                    video.thumnailImageName = dictionary["thumbnail_image_name"] as! String
-                    
-                    let channelDict = dictionary["channel"] as! [String : AnyObject]
-                    
-                    let channel = Channel()
-                    channel.name = channelDict["name"] as! String
-                    channel.profileImageName = channelDict["profile_image_name"] as! String
-                    
-                    video.channel = channel
-                    videos.append(video)
-                }
-                
-                DispatchQueue.main.async {
+                guard let data = data else { return }
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let videos = try decoder.decode([Video].self, from: data)
+               
+                DispatchQueue.main.async {                    
                     completion(videos)
-                    
                 }
                 
             } catch let jsonError {
                 print(jsonError)
             }
             
-        }).resume()
+            
+            
+            }.resume()
     }
+    
+    
     
 }
