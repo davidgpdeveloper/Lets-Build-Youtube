@@ -23,6 +23,7 @@
 		9576855F21862EB500319C5D /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576855E21862EB500319C5D /* VideoLauncher.swift */; };
 		9597AA45217E4CA7007A24A4 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597AA44217E4CA7007A24A4 /* ApiService.swift */; };
 		95CC459D2156B0A900D573DF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC459C2156B0A900D573DF /* Video.swift */; };
+		ACAE6B60257969AD0027FD98 /* ViewControllerSampleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE6B5F257969AD0027FD98 /* ViewControllerSampleOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9576855E21862EB500319C5D /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		9597AA44217E4CA7007A24A4 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		95CC459C2156B0A900D573DF /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		ACAE6B5F257969AD0027FD98 /* ViewControllerSampleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSampleOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		952097F420F26878005FF6DF /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				ACAE6B5C257969500027FD98 /* GitHubTutorialTestFiles */,
 				9597AA43217E4C8C007A24A4 /* ApiService */,
 				95CC459B2156B09600D573DF /* Model */,
 				9520980120F26879005FF6DF /* Info.plist */,
@@ -137,6 +140,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		ACAE6B5C257969500027FD98 /* GitHubTutorialTestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE6B5F257969AD0027FD98 /* ViewControllerSampleOne.swift */,
+			);
+			path = GitHubTutorialTestFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +180,7 @@
 				TargetAttributes = {
 					952097F120F26878005FF6DF = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -213,6 +225,7 @@
 				9576855B2185D9E000319C5D /* TrendingCell.swift in Sources */,
 				95768559217FA9D900319C5D /* FeddCell.swift in Sources */,
 				95050E7F216A6305000CCB45 /* SettingCell.swift in Sources */,
+				ACAE6B60257969AD0027FD98 /* ViewControllerSampleOne.swift in Sources */,
 				9520980C20F287BC005FF6DF /* VideoCell.swift in Sources */,
 				95050E7D216A5DD7000CCB45 /* SettingsLauncher.swift in Sources */,
 				9576855F21862EB500319C5D /* VideoLauncher.swift in Sources */,
@@ -366,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTUSCAYQM8;
 				INFOPLIST_FILE = Youtube/Info.plist;
@@ -375,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = davidgpdeveloper.Youtube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Youtube/GitHubTutorialTestFiles/Youtube-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTUSCAYQM8;
 				INFOPLIST_FILE = Youtube/Info.plist;
@@ -393,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = davidgpdeveloper.Youtube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Youtube/GitHubTutorialTestFiles/Youtube-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
