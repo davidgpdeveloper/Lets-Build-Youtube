@@ -32,3 +32,8 @@ class ViewControllerSampleOne: UIViewController {
     }
     
 }
+
+extension ViewControllerSampleOne {
+    
+    
+}
