@@ -25,7 +25,7 @@ class ViewControllerSampleOne: UIViewController {
     }
     
     func secondAction() {
-        
+        print("secondAction")
     }
     
 }
