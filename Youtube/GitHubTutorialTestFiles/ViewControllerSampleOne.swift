@@ -18,14 +18,16 @@ class ViewControllerSampleOne: UIViewController {
         secondAction()
     }
 
+    // 1
     func initialActions() {
         
         print("initialActions")
         
     }
     
+    // 2
     func secondAction() {
-        
+        print("secondAction")
     }
     
 }
