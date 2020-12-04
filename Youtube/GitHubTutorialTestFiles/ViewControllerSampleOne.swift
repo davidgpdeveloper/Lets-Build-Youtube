@@ -35,5 +35,7 @@ class ViewControllerSampleOne: UIViewController {
 
 extension ViewControllerSampleOne {
     
-    
+    func functionTestingExtention() {
+        print("???")
+    }
 }
