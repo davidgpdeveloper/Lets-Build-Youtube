@@ -33,7 +33,4 @@ class ViewControllerSampleOne: UIViewController {
     
 }
 
-extension ViewControllerSampleOne {
-    
-    
-}
+// DELETED EXTENSION
