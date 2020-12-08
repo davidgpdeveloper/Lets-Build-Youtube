@@ -34,7 +34,7 @@ class ViewControllerSampleOne: UIViewController {
     
     // 3
     func extraAction() {
-        
+        print("Added from web")
     }
     
 }
