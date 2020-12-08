@@ -49,5 +49,10 @@ extension ViewControllerSampleOne {
         print("A")
         print("A")
         print("A")
+        
+        print("B")
+        print("B")
+        print("B")
+        print("B")
     }
 }
