@@ -9,6 +9,7 @@
 import UIKit
 
 
+//
 class ViewControllerSampleOne: UIViewController {
 
     override func viewDidLoad() {
@@ -31,11 +32,15 @@ class ViewControllerSampleOne: UIViewController {
         print("secondAction")
     }
     
+    // 3
+    func extraAction() {
+        
+    }
+    
 }
 
 extension ViewControllerSampleOne {
     
     func functionTestingExtention() {
-        print("???")
     }
 }
