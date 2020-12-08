@@ -46,3 +46,10 @@ extension ViewControllerSampleOne {
         print("abcdefg")
     }
 }
+
+extension ViewControllerSampleOne {
+    
+    func secondExtention() {
+        print("secondExtention")
+    }
+}
