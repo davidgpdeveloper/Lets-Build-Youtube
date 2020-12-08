@@ -44,5 +44,10 @@ extension ViewControllerSampleOne {
     func functionTestingExtention() {
 
         print("Deleted prints")
+        
+        print("A")
+        print("A")
+        print("A")
+        print("A")
     }
 }
